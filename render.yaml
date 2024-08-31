@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: trail-backend
-    env: python
-    buildCommand: "apt-get update && apt-get install -y tesseract-ocr tesseract-ocr-eng tesseract-ocr-hin && pip install -r requirements.txt"
-    startCommand: "gunicorn index:app"
